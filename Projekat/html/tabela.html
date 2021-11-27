@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet"  href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <nav id="Navigacija">
+        <ul id="navg">
+        <li id="pocetna"><a href="index.html">&#127968;</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="tabela.html">Tabela</a></li>
+        <li><a href="igrabrojeva.html">Igra brojeva</a></li>
+        </ul>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th id="kol1" onclick="Sortiraj('kolona1','s1')"><div class="polje"><p class="strelica">Naslov</p><p class="strelica prazno" id="s1"></p></div></th>
+                <th id="kol2" onclick="Sortiraj('kolona2','s2')"><div class="polje"><p class="strelica">Autor</p><p id="s2" class="strelica prazno"></p></div></th>
+                <th id="kol3" onclick="SortirajBr('kolona3','s3')"><div class="polje"><p class="strelica">Tiraž</p><p id="s3" class="strelica prazno"></p></div></th>
+                <th id="kol4" onclick="SortirajBr('kolona4','s4')"><div class="polje"><p class="strelica">Cena</p><p id="s4" class="strelica prazno"></p></div></th>
+                <th id="kol5" onclick="SortirajBr('kolona5','s5')"><div class="polje"><p class="strelica">Broj Stranica</p><p id="s5" class="strelica prazno"></p></div></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="kolona1" class="red1" id="k1r1">Anja Karenjina</td>
+                    <td class="kolona2" class="red1" id="k2r1">Lav Tolstoj</td>
+                    <td class="kolona3" class="red1" id="k3r1">350</td>
+                    <td class="kolona4" class="red1" id="k4r1">700</td>
+                    <td class="kolona5" class="red1" id="k5r1">792</td>
+                </tr>
+                <tr>
+                    <td class="kolona1" class="red2" id="k1r2">Starac i more</td>
+                    <td class="kolona2" class="red2" id="k2r2">Ernest Hemingvej</td>
+                    <td class="kolona3" class="red2" id="k3r2">420</td>
+                    <td class="kolona4" class="red2" id="k4r2">400</td>
+                    <td class="kolona5" class="red2" id="k5r2">108</td>
+                </tr>
+                <tr id="gr">
+                    <td class="kolona1" class="red3" id="k1r3">Koreni</td>
+                    <td class="kolona2" class="red3" id="k2r3">Dobrica Ćosić</td>
+                    <td class="kolona3" class="red3" id="k3r3">700</td>
+                    <td class="kolona4" class="red3" id="k4r3">810</td>
+                    <td class="kolona5" class="red3" id="k5r3">376</td>
+                </tr>
+                <tr>
+                    <td class="kolona1" class="red4" id="k1r4">Na Drini Ćuprija</td>
+                    <td class="kolona2" class="red4" id="k2r4">Ivo Andrić</td>
+                    <td class="kolona3" class="red4" id="k3r4">810</td>
+                    <td class="kolona4" class="red4" id="k4r4">940</td>
+                    <td class="kolona5" class="red4" id="k5r4">392</td>
+                </tr>
+                <tr>
+                    <td class="kolona1" class="red5" id="k1r5">Romeo i Julija</td>
+                    <td class="kolona2" class="red5" id="k2r5">Vilijam Šekspir</td>
+                    <td class="kolona3" class="red5" id="k3r5">3150</td>
+                    <td class="kolona4" class="red5" id="k4r5">600</td>
+                    <td class="kolona5" class="red5" id="k5r5">216</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table><br><br>
+    <input id="nt" type="number" value="" min="1" max="10"><br>
+    <button onclick="NovaTabela()" id="klk">Kliknite za pravljenje tabele</button>
+    <table id="t2">
+        <tbody id="tb2"></tbody>
+    </table>
+</body>
+</html>

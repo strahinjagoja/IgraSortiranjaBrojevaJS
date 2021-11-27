@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet"  href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <nav id="Navigacija">
+        <ul id="navg">
+        <li id="pocetna"><a href="index.html">&#127968;</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="tabela.html">Tabela</a></li>
+        <li><a href="igrabrojeva.html">Igra brojeva</a></li>
+        </ul>
+    </nav>
+    <div id="galerijasl">
+        <div id="Trenutna"><div id="prethodna" onclick="PrethodnaSlika()">&#10094;</div><div id="sledeca" onclick="SledecaSlika()">&#10095;</div><img id="glavna" src="../img/slika1.jpg"></div>
+        <div id="Kontejner">
+            <img id="slika1" onclick="PrebaciSliku(this.id)" class="slike" src="../img/slika1.jpg">
+            <img id="slika2" onclick="PrebaciSliku(this.id)" class="slike" src="../img/slika2.jpg">
+            <img id="slika3" onclick="PrebaciSliku(this.id)" class="slike" src="../img/slika3.jpg">
+            <img id="slika4" onclick="PrebaciSliku(this.id)" class="slike" src="../img/slika4.jpg">
+            <img id="slika5" onclick="PrebaciSliku(this.id)" class="slike" src="../img/slika5.jpg">
+        </div>
+    </div>
+</body>
+</html>
